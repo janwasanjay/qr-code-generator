@@ -32,15 +32,17 @@
         },
       };
     </script>
-    <script
+    <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
       integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    ></script>
-    <!-- <script
-      src="https://cdn.jsdelivr.net/npm/easyqrcodejs@4.4.13/dist/easy.qrcode.min.js"
     ></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/easyqrcodejs@4.4.13/dist/easy.qrcode.min.js"
+    ></script>
+    <!-- <script src="https://cdn.rawgit.com/tsayen/dom-to-image/bfc00a6c5bba731027820199acd7b0a6e92149d8/dist/dom-to-image.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script> -->
     <script src="js/script.js" defer></script>
     <style>
       #spinner {
@@ -83,9 +85,8 @@
               <div class="w-full md:w-1/2 mr-10">
                 </div>
             </div>
-            
 
-            <div class="flex flex-col-reverse align-center justify-center m-auto p-2 md:flex-row hidden">
+            <div class="flex flex-col-reverse align-center justify-center m-auto p-2 md:flex-row">
               <div class="w-full md:w-1/2 mr-10">
                 <label >QR Code title:</label>
                 <input
@@ -138,31 +139,6 @@
                 </select>
               </div>
             </div>
-
-            <div class="flex flex-col-reverse align-center justify-center m-auto p-2 md:flex-row hidden">
-              <div class="w-full md:w-1/2 mr-10">
-                <label >QR Code logo:</label>
-                <img id="imgpreview" width="200" class="d-none" src="#"/>
-			            <input type="file" id="fileUpload" accept="image/png, image/jpg, image/jpeg" class="fileUpload form-control cs-form-control-h"><br>
-                  <small class="cs-mandatory">only images allowed (size should be less then 2 MB)</small>
-                  <input type="hidden" id="hdnunqfilename" value="" />
-              </div>
-              <div class="w-full md:w-1/2 mr-10">
-                <label >QR Code logo size:</label>
-                <select
-                  class="w-full border-2 border-gray-200 rounded p-3 text-grey-dark mr-2 focus:outline-none"
-                  name="logosize"
-                  id="logosize" >
-                <option value="20">20x20</option>
-                <option value="40">40x40</option>
-                  <option value="60">60x60</option>
-                  <option value="80">80x80</option>
-                  <option value="100" selected>100x100</option>
-                  <option value="200">200x200</option>
-                </select>
-              </div>
-            </div>
-            
 
             <button
               class="bg-gray-600 rounded w-full text-white py-3 px-4 mt-5 hover:bg-black"
